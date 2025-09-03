@@ -1,0 +1,28 @@
+name: Rename Project Keywords
+
+on:
+  workflow_dispatch:   # lets you trigger manually from GitHub Actions tab
+
+jobs:
+  rename:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Replace "shofy" with "amoha"
+        run: |
+          git grep -l 'shofy' | xargs sed -i 's/shofy/amoha/g'
+
+      - name: Replace "jewelry" with "jewellery"
+        run: |
+          git grep -l 'jewelry' | xargs sed -i 's/jewelry/jewellery/g'
+
+      - name: Commit Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Automated rename: shofy → amoha, jewelry → jewellery" || echo "No changes to commit"
+          git push
