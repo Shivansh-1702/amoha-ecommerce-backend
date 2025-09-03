@@ -37,7 +37,7 @@ const coupons = [
     endTime: "2023-09-01T20:19:00.000Z",
     discountPercentage: 10,
     minimumAmount: 300,
-    productType: "jewelry"
+    productType: "jewellery"
   }
 ]
 

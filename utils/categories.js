@@ -195,7 +195,7 @@ const categories = [
       "Gold",
       "Silver"
     ],
-    productType: "jewelry",
+    productType: "jewellery",
     products: [
       "6431364df5a812bd37e765ac",
       "6431418c5e1d915c39ada44b",
@@ -210,7 +210,7 @@ const categories = [
       "Gold",
       "Silver"
     ],
-    productType: "jewelry",
+    productType: "jewellery",
     products: [
       "64313abdf5a812bd37e765bc",
       "64323fd99814bb139594c443",
@@ -225,7 +225,7 @@ const categories = [
       "Gold",
       "Silver"
     ],
-    productType: "jewelry",
+    productType: "jewellery",
     products: [
       "64313e92f5a812bd37e765cf",
       "6432433c9814bb139594c44c"
